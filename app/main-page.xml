@@ -1,0 +1,13 @@
+<!-- main-page.xml -->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" loaded="onLoaded">
+  <ActionBar title="My App">
+  </ActionBar>
+  
+  <ScrollView>
+    <StackLayout class="p-20" height="1000">
+      <Label text="Tap the button" class="h1 text-center" />
+      <Button text="TAP" tap="{{ onTap }}" class="-primary" />
+      <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
+    </StackLayout>
+  </ScrollView>
+</Page>
