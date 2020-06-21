@@ -1,10 +1,15 @@
 <!-- main-page.xml -->
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" loaded="onLoaded">
-  <ActionBar title="My App">
+  <ActionBar title="test">
+    <StackLayout orientation="horizontal"
+      ios:horizontalAlignment="center"
+      android:horizontalAlignment="left">
+      <Label text="NativeScript" class="action-label"></Label>
+    </StackLayout>
   </ActionBar>
-  
-  <ScrollView>
-    <StackLayout class="p-20" height="1000">
+ 
+  <ScrollView orientation="vertical">
+    <StackLayout orientation="vertical" class="p-20" height="1500">
       <Label text="Tap the button" class="h1 text-center" />
       <Button text="TAP" tap="{{ onTap }}" class="-primary" />
       <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
